@@ -1,0 +1,239 @@
+
+
+
+body {
+/* Set background colour */
+background-color: rgb(96, 94, 94);
+}
+
+main {
+display: grid;
+/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+header {
+/* use a flexbox to set the title, update tag, and page track centered */
+display: flex;
+flex-direction: column;
+/* flex-wrap: wrap; */
+border: 1em solid #333;
+border-top: none;
+border-bottom: none;
+text-align: center;
+margin: -0.5em -0.5em;
+/* text-align: center; */
+}
+
+header p {
+text-shadow: 10px 10px 10px red;
+}
+
+header figcaption {
+text-shadow: 15px 15px 15px hotpink,
+5px 5px 5px #333;
+}
+
+audio {
+width: 1000px;
+}
+
+header figure {
+font-size: 1.5em;
+font-family: Fantasy, Arial, Helvetica, sans-serif;
+color: red;
+}
+
+h1 {
+/* larger text coloured red */
+font-family: Fantasy, Arial, Helvetica, sans-serif;
+font-weight: 1000;
+font-size: 4em;
+color: red;
+text-shadow: 10px 10px 10px #333,
+20px 20px 20px red;
+text-align: center;
+/* Can you make text look like it's oozing */
+}
+
+.contents {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+border: 1em solid #333;
+border-top: none;
+padding: 0;
+margin: 0 -0.5em;
+}
+
+nav ul li a {
+display: flex;
+/* display: block; */
+flex-direction: column;
+flex-wrap: wrap;
+box-shadow: 10px 10px 10px #333;
+border-radius: 1em;
+max-width: 100px;
+/* max-height: 75px; */
+/* min-width: 100px; */
+/* min-height: 75px; */
+align-items: center;
+border: 5px solid hotpink;
+font-family: Helvetica, arial, sans-serif;
+color: #333;
+background-color: rgba(244, 126, 126, 0.695);
+text-decoration: none;
+text-align: center;
+padding: 1em;
+margin: 0.5em 0.5em;
+font-size: 1em;
+}
+
+li a:hover {
+color: white;
+background-color: purple;
+}
+
+section figure a img {
+/* align-items: center; */
+display: flex;
+border: 5px;
+border-radius: 5em;
+width: fit-content;
+height: fit-content;
+}
+
+section figure a img:hover {
+box-shadow: 5px 5px 20px black;
+/* background-color: black; */
+}
+
+section figure a {
+/* display: flex;
+border: 5px solid hotpink;
+border-radius: 3em; */
+}
+
+/* nav {
+height: none;
+} */
+
+br {
+line-height: 3em;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* padding: none; */
+/* margin: none; */
+}
+
+nav ul li{
+/* Make each listed element a button that can be clicked */
+/* large enough to look click-able but not dominating the page */
+display: flex;
+/* flex-wrap: wrap; */
+/* display: block; */
+/* flex-direction: column; */
+/* height: 5em; */
+/* width: 8em; */
+/* border-radius: 1em; */
+/* border: 5px solid hotpink; */
+/* justify-content: center; */
+/* align-content: center; */
+/* padding: fit-content; */
+/* margin: 0 0.5em; */
+/* background-color: rgba(244, 126, 126, 0.695); */
+
+
+}
+
+article {
+/* Can you group all of the article sections to stick together, but seperate the footer section so it always aligns to the bottom of the page? */
+display: flex;
+/* flex-direction: row; */
+flex-wrap: wrap;
+}
+
+section h2 {
+font-family: Fantasy, Arial, Helvetica, sans-serif;
+font-size: 2em;
+text-shadow: 10px 10px 10px #333;
+color: red;
+}
+
+article h2 {
+font-family: Fantasy, Arial, Helvetica, sans-serif;
+font-size: 3em;
+text-shadow: 10px 10px 10px #333;
+color: red;
+/* display: block; */
+}
+
+h3 {
+font-size: 2em;
+font-family: Fantasy, Arial, Helvetica, sans-serif;
+}
+
+article section {
+/* each section should look like a card that auto aligns to the screen size */
+/* Should read top down, without information being cut out from the box */
+display: flex;
+flex-direction: column;
+/* justify-content: space-around; */
+flex-wrap: wrap;
+box-shadow: 20px 20px 20px #333;
+/* width: 550px; */
+max-width: 550px;
+max-height: 800px;
+min-height: 800px;
+align-items: center;
+border: 5px solid hotpink;
+border-radius: 3em;
+padding: 1em;
+margin: 2em;
+background-color: rgba(244, 126, 126, 0.695);
+/* text-align: center; */
+}
+
+article section aside p {
+color: aqua;
+}
+
+article section p { 
+font-size: 20px;
+font-weight: 1000;
+margin: 0.5em 0;
+padding: 0;
+}
+
+article section:hover {
+color: white;
+background-color: red;
+/* cursor: pointer; */
+}
+
+blockquote {
+/* Should have correct spacing between line-breaks */
+line-height: 1.25em;
+padding: 0 0 0 0.5em;
+margin: 0;
+}
+
+figcaption {
+/* Should be aligned to the image correctly */
+}
+iframe {
+/* This element should be glued within the section box but comanding the space of 2 boxes so the video can nest along side the image. */
+/* display: flex;
+flex-direction: right;
+align-items: flex-end;
+border: 1em solid black;
+padding: 0;
+margin: 0; */
+}
+
+address, a {
+/* Can you style both ancor items to look like buttons but not break each other? */
+}
