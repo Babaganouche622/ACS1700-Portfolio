@@ -1,27 +1,16 @@
 
-
-
 body {
-/* Set background colour */
 background-color: rgb(94, 96, 94);
 }
 
-main {
-display: grid;
-/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-}
-
 header {
-/* use a flexbox to set the title, update tag, and page track centered */
 display: flex;
 flex-direction: column;
-/* flex-wrap: wrap; */
 border: 1em solid #333;
 border-top: none;
 border-bottom: none;
 text-align: center;
 margin: -0.5em -0.5em;
-/* text-align: center; */
 }
 
 header p {
@@ -44,7 +33,7 @@ color: red;
 }
 
 h1 {
-/* larger text coloured red */
+/* I wanted my title look like it was bleeding, animating was way beyond me so I played with shadows and font styles. */
 font-family: zapfino, fantasy;
 font-weight: 1000;
 font-size: 4em;
@@ -52,7 +41,7 @@ color: red;
 text-shadow: 10px 10px 10px #333,
 20px 20px 20px red;
 text-align: center;
-/* Can you make text look like it's oozing */
+/* Can you make text look like it's oozing? */
 }
 
 .contents {
@@ -67,15 +56,10 @@ margin: 0 -0.5em;
 
 nav ul li a {
 display: flex;
-/* display: block; */
 flex-direction: column;
-/* flex-wrap: wrap; */
 box-shadow: 10px 10px 10px #333;
 border-radius: 1em;
 max-width: 100px;
-/* max-height: 75px; */
-/* min-width: 100px; */
-/* min-height: 75px; */
 align-items: center;
 border: 5px solid hotpink;
 font-family: Helvetica, arial, sans-serif;
@@ -94,7 +78,6 @@ background-color: purple;
 }
 
 section figure a img {
-/* align-items: center; */
 display: flex;
 border: 5px;
 border-radius: 5em;
@@ -104,19 +87,12 @@ height: fit-content;
 
 section figure a img:hover {
 box-shadow: 5px 5px 20px black;
-/* background-color: black; */
-}
-
-br {
-line-height: 3em;
 }
 
 nav ul {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-/* padding: none; */
-/* margin: none; */
 }
 
 nav ul li{
@@ -235,8 +211,4 @@ border-radius: 3em;
 padding: 1em 1em 1em 3em;
 margin: 2em;
 background-color: rgba(244, 126, 126, 0.695);
-}
-
-address, a {
-/* Can you style both ancor items to look like buttons but not break each other? */
 }
